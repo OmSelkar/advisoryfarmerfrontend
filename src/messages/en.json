@@ -1,0 +1,111 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "myAssistant": "My Assistant",
+    "cropRecommendations": "Crop Recommendations",
+    "myFields": "My Fields",
+    "profile": "Profile",
+    "governmentSchemes": "Government Schemes",
+    "backToDashboard": "Back to Dashboard",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "dashboard": {
+    "title": "Kerala Farmer Dashboard",
+    "subtitle": "Your farming companion for better yields",
+    "weatherCard": {
+      "title": "Today's Weather",
+      "location": "Kochi, Kerala",
+      "humidity": "Humidity",
+      "windSpeed": "Wind Speed"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "cropRecommendation": "Get Crop Recommendation",
+      "weatherForecast": "Weather Forecast",
+      "marketPrices": "Market Prices",
+      "expertAdvice": "Expert Advice"
+    },
+    "governmentSchemes": {
+      "title": "Government Schemes",
+      "viewAll": "View All Schemes"
+    }
+  },
+  "aiAssistant": {
+    "title": "AI Assistant",
+    "subtitle": "How can I help you today?",
+    "description": "Ask me anything about crop management, pest control, market prices, weather forecasts, and farming best practices.",
+    "suggestions": {
+      "marketPrices": {
+        "title": "Market Prices",
+        "description": "What's the current price for rubber in Kottayam?"
+      },
+      "fertilizerAdvice": {
+        "title": "Fertilizer Advice",
+        "description": "Best fertilizer for coconut trees this season?"
+      },
+      "pestIdentification": {
+        "title": "Pest Identification",
+        "description": "Identify this pest on my tomato plant (image)."
+      },
+      "weatherForecast": {
+        "title": "Weather Forecast",
+        "description": "Will it rain in my area in the next 3 days?"
+      }
+    },
+    "placeholder": "Type your message here...",
+    "send": "Send"
+  },
+  "cropRecommendation": {
+    "title": "Crop Recommendation",
+    "subtitle": "Tell us about your farm, we'll give the best crop recommendations",
+    "landSize": {
+      "label": "Land Size",
+      "placeholder": "Enter land size in acres"
+    },
+    "waterSource": {
+      "label": "Water Source",
+      "options": {
+        "rainwater": "Rainwater",
+        "borewell": "Borewell",
+        "river": "River/Canal",
+        "pond": "Pond"
+      }
+    },
+    "soilType": {
+      "label": "Soil Type",
+      "options": {
+        "clay": "Clay",
+        "sandy": "Sandy",
+        "loamy": "Loamy",
+        "black": "Black Soil"
+      }
+    },
+    "budget": {
+      "label": "Budget Range",
+      "placeholder": "Enter budget in INR"
+    },
+    "experience": {
+      "label": "Farming Experience",
+      "options": {
+        "beginner": "Beginner (0-2 years)",
+        "intermediate": "Intermediate (3-5 years)",
+        "experienced": "Experienced (5+ years)"
+      }
+    },
+    "equipment": {
+      "label": "Available Equipment",
+      "options": {
+        "tractor": "Tractor",
+        "plough": "Plough",
+        "sprayer": "Sprayer",
+        "harvester": "Harvester"
+      }
+    },
+    "getRecommendation": "Get Recommendation"
+  }
+}

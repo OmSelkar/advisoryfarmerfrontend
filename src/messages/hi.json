@@ -1,0 +1,111 @@
+{
+  "common": {
+    "dashboard": "डैशबोर्ड",
+    "myAssistant": "मेरा सहायक",
+    "cropRecommendations": "फसल सिफारिशें",
+    "myFields": "मेरे खेत",
+    "profile": "प्रोफ़ाइल",
+    "governmentSchemes": "सरकारी योजनाएं",
+    "backToDashboard": "डैशबोर्ड पर वापस जाएं",
+    "submit": "जमा करें",
+    "cancel": "रद्द करें",
+    "save": "सेव करें",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता"
+  },
+  "dashboard": {
+    "title": "केरल किसान डैशबोर्ड",
+    "subtitle": "बेहतर उपज के लिए आपका खेती साथी",
+    "weatherCard": {
+      "title": "आज का मौसम",
+      "location": "कोच्चि, केरल",
+      "humidity": "आर्द्रता",
+      "windSpeed": "हवा की गति"
+    },
+    "quickActions": {
+      "title": "त्वरित कार्य",
+      "cropRecommendation": "फसल सिफारिश प्राप्त करें",
+      "weatherForecast": "मौसम पूर्वानुमान",
+      "marketPrices": "बाजार मूल्य",
+      "expertAdvice": "विशेषज्ञ सलाह"
+    },
+    "governmentSchemes": {
+      "title": "सरकारी योजनाएं",
+      "viewAll": "सभी योजनाएं देखें"
+    }
+  },
+  "aiAssistant": {
+    "title": "AI सहायक",
+    "subtitle": "आज मैं आपकी कैसे मदद कर सकता हूं?",
+    "description": "फसल प्रबंधन, कीट नियंत्रण, बाजार मूल्य, मौसम पूर्वानुमान, और खेती की सर्वोत्तम प्रथाओं के बारे में मुझसे कुछ भी पूछें।",
+    "suggestions": {
+      "marketPrices": {
+        "title": "बाजार मूल्य",
+        "description": "कोट्टायम में रबर की वर्तमान कीमत क्या है?"
+      },
+      "fertilizerAdvice": {
+        "title": "उर्वरक सलाह",
+        "description": "इस सीजन में नारियल के पेड़ों के लिए सबसे अच्छा उर्वरक?"
+      },
+      "pestIdentification": {
+        "title": "कीट पहचान",
+        "description": "मेरे टमाटर के पौधे पर इस कीट की पहचान करें (छवि)।"
+      },
+      "weatherForecast": {
+        "title": "मौसम पूर्वानुमान",
+        "description": "क्या अगले 3 दिनों में मेरे क्षेत्र में बारिश होगी?"
+      }
+    },
+    "placeholder": "यहाँ अपना संदेश टाइप करें...",
+    "send": "भेजें"
+  },
+  "cropRecommendation": {
+    "title": "फसल सिफारिश",
+    "subtitle": "हमें अपने खेत के बारे में बताएं, हम सबसे अच्छी फसल सिफारिशें देंगे",
+    "landSize": {
+      "label": "भूमि का आकार",
+      "placeholder": "एकड़ में भूमि का आकार दर्ज करें"
+    },
+    "waterSource": {
+      "label": "जल स्रोत",
+      "options": {
+        "rainwater": "बारिश का पानी",
+        "borewell": "बोरवेल",
+        "river": "नदी/नहर",
+        "pond": "तालाब"
+      }
+    },
+    "soilType": {
+      "label": "मिट्टी का प्रकार",
+      "options": {
+        "clay": "चिकनी मिट्टी",
+        "sandy": "रेतीली मिट्टी",
+        "loamy": "दोमट मिट्टी",
+        "black": "काली मिट्टी"
+      }
+    },
+    "budget": {
+      "label": "बजट सीमा",
+      "placeholder": "INR में बजट दर्ज करें"
+    },
+    "experience": {
+      "label": "खेती का अनुभव",
+      "options": {
+        "beginner": "शुरुआती (0-2 साल)",
+        "intermediate": "मध्यम (3-5 साल)",
+        "experienced": "अनुभवी (5+ साल)"
+      }
+    },
+    "equipment": {
+      "label": "उपलब्ध उपकरण",
+      "options": {
+        "tractor": "ट्रैक्टर",
+        "plough": "हल",
+        "sprayer": "स्प्रेयर",
+        "harvester": "हार्वेस्टर"
+      }
+    },
+    "getRecommendation": "सिफारिश प्राप्त करें"
+  }
+}

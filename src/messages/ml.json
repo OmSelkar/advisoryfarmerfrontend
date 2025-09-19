@@ -1,0 +1,111 @@
+{
+  "common": {
+    "dashboard": "ഡാഷ്‌ബോർഡ്",
+    "myAssistant": "എന്റെ സഹായി",
+    "cropRecommendations": "വിള ശുപാർശകൾ",
+    "myFields": "എന്റെ വയലുകൾ",
+    "profile": "പ്രൊഫൈൽ",
+    "governmentSchemes": "സർക്കാർ പദ്ധതികൾ",
+    "backToDashboard": "ഡാഷ്‌ബോർഡിലേക്ക് മടങ്ങുക",
+    "submit": "സമർപ്പിക്കുക",
+    "cancel": "റദ്ദാക്കുക",
+    "save": "സേവ് ചെയ്യുക",
+    "loading": "ലോഡിംഗ്...",
+    "error": "പിശക്",
+    "success": "വിജയം"
+  },
+  "dashboard": {
+    "title": "കേരള കർഷക ഡാഷ്‌ബോർഡ്",
+    "subtitle": "മികച്ച വിളവിനുള്ള നിങ്ങളുടെ കൃഷി സഹായി",
+    "weatherCard": {
+      "title": "ഇന്നത്തെ കാലാവസ്ഥ",
+      "location": "കൊച്ചി, കേരളം",
+      "humidity": "ആർദ്രത",
+      "windSpeed": "കാറ്റിന്റെ വേഗത"
+    },
+    "quickActions": {
+      "title": "പെട്ടെന്നുള്ള പ്രവർത്തനങ്ങൾ",
+      "cropRecommendation": "വിള ശുപാർശ നേടുക",
+      "weatherForecast": "കാലാവസ്ഥാ പ്രവചനം",
+      "marketPrices": "മാർക്കറ്റ് വിലകൾ",
+      "expertAdvice": "വിദഗ്ധ ഉപദേശം"
+    },
+    "governmentSchemes": {
+      "title": "സർക്കാർ പദ്ധതികൾ",
+      "viewAll": "എല്ലാ പദ്ധതികളും കാണുക"
+    }
+  },
+  "aiAssistant": {
+    "title": "AI സഹായി",
+    "subtitle": "ഇന്ന് ഞാൻ നിങ്ങളെ എങ്ങനെ സഹായിക്കാം?",
+    "description": "വിള പരിപാലനം, കീട നിയന്ത്രണം, മാർക്കറ്റ് വിലകൾ, കാലാവസ്ഥാ പ്രവചനം, കൃഷി മികച്ച രീതികൾ എന്നിവയെക്കുറിച്ച് എന്തും ചോദിക്കുക.",
+    "suggestions": {
+      "marketPrices": {
+        "title": "മാർക്കറ്റ് വിലകൾ",
+        "description": "കോട്ടയത്തിലെ റബ്ബറിന്റെ നിലവിലെ വില എന്താണ്?"
+      },
+      "fertilizerAdvice": {
+        "title": "വളം ഉപദേശം",
+        "description": "ഈ സീസണിൽ തെങ്ങിന് ഏറ്റവും നല്ല വളം?"
+      },
+      "pestIdentification": {
+        "title": "കീട തിരിച്ചറിയൽ",
+        "description": "എന്റെ തക്കാളി ചെടിയിലെ ഈ കീടത്തെ തിരിച്ചറിയുക (ചിത്രം)."
+      },
+      "weatherForecast": {
+        "title": "കാലാവസ്ഥാ പ്രവചനം",
+        "description": "അടുത്ത 3 ദിവസത്തിൽ എന്റെ പ്രദേശത്ത് മഴ പെയ്യുമോ?"
+      }
+    },
+    "placeholder": "നിങ്ങളുടെ സന്ദേശം ഇവിടെ ടൈപ്പ് ചെയ്യുക...",
+    "send": "അയയ്ക്കുക"
+  },
+  "cropRecommendation": {
+    "title": "വിള ശുപാർശ",
+    "subtitle": "നിങ്ങളുടെ കൃഷിയെക്കുറിച്ച് പറയുക, ഞങ്ങൾ മികച്ച വിള ശുപാർശകൾ നൽകാം",
+    "landSize": {
+      "label": "ഭൂമിയുടെ വലുപ്പം",
+      "placeholder": "ഏക്കറിൽ ഭൂമിയുടെ വലുപ്പം നൽകുക"
+    },
+    "waterSource": {
+      "label": "ജല സ്രോതസ്സ്",
+      "options": {
+        "rainwater": "മഴവെള്ളം",
+        "borewell": "ബോർവെൽ",
+        "river": "നദി/കനാൽ",
+        "pond": "കുളം"
+      }
+    },
+    "soilType": {
+      "label": "മണ്ണിന്റെ തരം",
+      "options": {
+        "clay": "കളിമണ്ണ്",
+        "sandy": "മണൽ മണ്ണ്",
+        "loamy": "പശിമമണ്ണ്",
+        "black": "കറുത്ത മണ്ണ്"
+      }
+    },
+    "budget": {
+      "label": "ബജറ്റ് പരിധി",
+      "placeholder": "INR-ൽ ബജറ്റ് നൽകുക"
+    },
+    "experience": {
+      "label": "കൃഷി അനുഭവം",
+      "options": {
+        "beginner": "തുടക്കക്കാരൻ (0-2 വർഷം)",
+        "intermediate": "ഇടത്തരം (3-5 വർഷം)",
+        "experienced": "പരിചയസമ്പന്നൻ (5+ വർഷം)"
+      }
+    },
+    "equipment": {
+      "label": "ലഭ്യമായ ഉപകരണങ്ങൾ",
+      "options": {
+        "tractor": "ട്രാക്ടർ",
+        "plough": "കലപ്പ",
+        "sprayer": "സ്പ്രേയർ",
+        "harvester": "വിളവെടുപ്പ് യന്ത്രം"
+      }
+    },
+    "getRecommendation": "ശുപാർശ നേടുക"
+  }
+}

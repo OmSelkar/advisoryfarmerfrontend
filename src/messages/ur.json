@@ -1,0 +1,111 @@
+{
+  "common": {
+    "dashboard": "ڈیش بورڈ",
+    "myAssistant": "میرا اسسٹنٹ",
+    "cropRecommendations": "فصل کی سفارشات",
+    "myFields": "میرے کھیت",
+    "profile": "پروفائل",
+    "governmentSchemes": "سرکاری اسکیمز",
+    "backToDashboard": "ڈیش بورڈ پر واپس جائیں",
+    "submit": "جمع کریں",
+    "cancel": "منسوخ کریں",
+    "save": "محفوظ کریں",
+    "loading": "لوڈ ہو رہا ہے...",
+    "error": "خرابی",
+    "success": "کامیابی"
+  },
+  "dashboard": {
+    "title": "کیرالہ کسان ڈیش بورڈ",
+    "subtitle": "بہتر پیداوار کے لیے آپ کا کھیتی کا ساتھی",
+    "weatherCard": {
+      "title": "آج کا موسم",
+      "location": "کوچی، کیرالہ",
+      "humidity": "نمی",
+      "windSpeed": "ہوا کی رفتار"
+    },
+    "quickActions": {
+      "title": "فوری اعمال",
+      "cropRecommendation": "فصل کی سفارش حاصل کریں",
+      "weatherForecast": "موسمی پیشن گوئی",
+      "marketPrices": "بازاری قیمتیں",
+      "expertAdvice": "ماہر کی مشورہ"
+    },
+    "governmentSchemes": {
+      "title": "سرکاری اسکیمز",
+      "viewAll": "تمام اسکیمز دیکھیں"
+    }
+  },
+  "aiAssistant": {
+    "title": "AI اسسٹنٹ",
+    "subtitle": "آج میں آپ کی کیسے مدد کر سکتا ہوں؟",
+    "description": "فصل کی دیکھ بھال، کیڑوں کا کنٹرول، بازاری قیمتیں، موسمی پیشن گوئی، اور کھیتی کے بہترین طریقوں کے بارے میں مجھ سے کچھ بھی پوچھیں۔",
+    "suggestions": {
+      "marketPrices": {
+        "title": "بازاری قیمتیں",
+        "description": "کوٹایم میں ربڑ کی موجودہ قیمت کیا ہے؟"
+      },
+      "fertilizerAdvice": {
+        "title": "کھاد کا مشورہ",
+        "description": "اس موسم میں ناریل کے درختوں کے لیے بہترین کھاد؟"
+      },
+      "pestIdentification": {
+        "title": "کیڑے کی شناخت",
+        "description": "میرے ٹماٹر کے پودے پر اس کیڑے کی شناخت کریں (تصویر)۔"
+      },
+      "weatherForecast": {
+        "title": "موسمی پیشن گوئی",
+        "description": "کیا اگلے 3 دنوں میں میرے علاقے میں بارش ہوگی؟"
+      }
+    },
+    "placeholder": "یہاں اپنا پیغام ٹائپ کریں...",
+    "send": "بھیجیں"
+  },
+  "cropRecommendation": {
+    "title": "فصل کی سفارش",
+    "subtitle": "ہمیں اپنے کھیت کے بارے میں بتائیں، ہم بہترین فصل کی سفارشات دیں گے",
+    "landSize": {
+      "label": "زمین کا سائز",
+      "placeholder": "ایکڑ میں زمین کا سائز درج کریں"
+    },
+    "waterSource": {
+      "label": "پانی کا ذریعہ",
+      "options": {
+        "rainwater": "بارش کا پانی",
+        "borewell": "بور ویل",
+        "river": "دریا/نہر",
+        "pond": "تالاب"
+      }
+    },
+    "soilType": {
+      "label": "مٹی کی قسم",
+      "options": {
+        "clay": "چکنی مٹی",
+        "sandy": "ریتیلی مٹی",
+        "loamy": "زرخیز مٹی",
+        "black": "کالی مٹی"
+      }
+    },
+    "budget": {
+      "label": "بجٹ کی حد",
+      "placeholder": "INR میں بجٹ درج کریں"
+    },
+    "experience": {
+      "label": "کھیتی کا تجربہ",
+      "options": {
+        "beginner": "ابتدائی (0-2 سال)",
+        "intermediate": "درمیانی (3-5 سال)",
+        "experienced": "تجربہ کار (5+ سال)"
+      }
+    },
+    "equipment": {
+      "label": "دستیاب آلات",
+      "options": {
+        "tractor": "ٹریکٹر",
+        "plough": "ہل",
+        "sprayer": "سپرے",
+        "harvester": "کٹائی کی مشین"
+      }
+    },
+    "getRecommendation": "سفارش حاصل کریں"
+  }
+}
