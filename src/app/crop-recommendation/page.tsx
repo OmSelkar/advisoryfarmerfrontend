@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Select,SelectTrigger,SelectContent,SelectValue,SelectItem } from "@/components/ui/select";
 import {
   Wheat,
   Clock,
@@ -38,6 +39,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { AppLayout } from "@/components/app-layout";
+import Image from "next/image";
 
 interface FormData {
   landSize: string;
@@ -364,6 +366,7 @@ export default function CropRecommendationPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep((s) => s + 1);
@@ -377,7 +380,80 @@ export default function CropRecommendationPage() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
-
+const cropOptions = [
+  {
+    value: "coconut",
+    label: "Coconut",
+    category: "Tree Crop",
+    image: "https://images.unsplash.com/photo-1565598484066-49b0b7c7e0da?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "rubber",
+    label: "Rubber",
+    category: "Tree Crop",
+    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "tea",
+    label: "Tea",
+    category: "Plantation Crop",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "coffee",
+    label: "Coffee",
+    category: "Plantation Crop",
+    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "cardamom",
+    label: "Cardamom",
+    category: "Spice",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "black_pepper",
+    label: "Black Pepper",
+    category: "Spice",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "paddy_rice",
+    label: "Paddy (Rice)",
+    category: "Cereal",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "banana",
+    label: "Banana",
+    category: "Fruit",
+    image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "cashew",
+    label: "Cashew",
+    category: "Nut",
+    image: "https://images.unsplash.com/photo-1508747703725-719777637510?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "arecanut",
+    label: "Arecanut",
+    category: "Nut",
+    image: "https://images.unsplash.com/photo-1582899718505-cec84a45ee5a?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "jackfruit",
+    label: "Jackfruit",
+    category: "Fruit",
+    image: "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?w=200&h=200&fit=crop&crop=center"
+  },
+  {
+    value: "vanilla",
+    label: "Vanilla",
+    category: "Spice",
+    image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=200&h=200&fit=crop&crop=center"
+  }
+];
   const steps = [
     {
       title: t.yourFarmland,
@@ -531,8 +607,12 @@ export default function CropRecommendationPage() {
   const currentStepData = steps[currentStep];
   const progress = ((currentStep + 1) / steps.length) * 100;
 
+  
   if (showLanguageSelection) {
     return (
+      <AppLayout>
+
+      
       <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 flex items-center justify-center p-4">
         <Card className="w-full max-w-lg bg-white/90 backdrop-blur-sm shadow-2xl border-0 overflow-hidden">
           <div className="bg-gradient-to-r from-emerald-600 to-teal-600 p-6 text-center">
@@ -567,6 +647,7 @@ export default function CropRecommendationPage() {
           </CardContent>
         </Card>
       </div>
+      </AppLayout>
     );
   }
 
@@ -699,14 +780,34 @@ export default function CropRecommendationPage() {
                     )}
 
                     {/* Input */}
-                    {question.type === "input" && (
-                      <Input
-                        placeholder={question.placeholder}
-                        value={formData[question.field as keyof FormData] as string}
-                        onChange={(e) => setFormData((prev) => ({ ...prev, [question.field]: e.target.value }))}
-                        className="text-lg p-4 border-2 rounded-xl border-gray-300 focus:border-emerald-400 focus:ring-4 focus:ring-emerald-100 transition-all duration-200"
-                      />
-                    )}
+                    {/* Dropdown */}
+{question.type === "input" && (
+  <Select
+    value={formData[question.field as keyof FormData] as string}
+    onValueChange={(value) => setFormData((prev) => ({ ...prev, [question.field]: value }))}
+  >
+    <SelectTrigger className="text-lg p-4 border-2 rounded-xl border-gray-300 focus:border-emerald-400 focus:ring-4 focus:ring-emerald-100 transition-all duration-200">
+      <SelectValue placeholder={question.placeholder} />
+    </SelectTrigger>
+    <SelectContent>
+      {cropOptions.map((option) => (
+        <SelectItem key={option.value} value={option.value}>
+          <div className="flex items-center gap-2">
+            <Image
+              src={option.image} 
+              alt={option.label} 
+              className="w-6 h-6 rounded-full object-cover"
+            />
+            <div>
+              <div>{option.label}</div>
+              <div className="text-sm text-gray-500">{option.category}</div>
+            </div>
+          </div>
+        </SelectItem>
+      ))}
+    </SelectContent>
+  </Select>
+)}
 
                     {/* Textarea */}
                     {question.type === "textarea" && (

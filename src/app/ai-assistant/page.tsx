@@ -174,24 +174,24 @@ function ElegantInput({
   };
 
   return (
-    <div className="sticky bottom-0 bg-white border-t border-gray-200 p-2 sm:p-3 safe-area-inset-bottom">
+    <div className="w-full max-w-4xl mx-auto bg-white border-t border-gray-200 p-3 safe-area-inset-bottom">
       {/* Attachments preview */}
       {attachments.length > 0 && (
-        <div className="mb-2 flex flex-wrap gap-2">
+        <div className="mb-3 flex flex-wrap gap-2">
           {attachments.map((file, index) => (
             <div
               key={index}
               className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-sm"
             >
               {file.type.startsWith('image/') ? (
-                <Image className="w-4 h-4 text-gray-600" />
+                <Image className="w-4 h-4 text-gray-600 flex-shrink-0" />
               ) : (
-                <Paperclip className="w-4 h-4 text-gray-600" />
+                <Paperclip className="w-4 h-4 text-gray-600 flex-shrink-0" />
               )}
               <span className="truncate max-w-[120px]">{file.name}</span>
               <button
                 onClick={() => removeAttachment(index)}
-                className="text-gray-500 hover:text-gray-700"
+                className="text-gray-500 hover:text-gray-700 flex-shrink-0"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -217,12 +217,12 @@ function ElegantInput({
           />
         </div>
 
-        {/* Action buttons */}
-        <div className="flex items-center gap-1">
+        {/* Action buttons - Fixed layout with proper spacing */}
+        <div className="flex items-center gap-1 flex-shrink-0">
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="w-11 h-11 rounded-full bg-gray-100 hover:bg-gray-200 active:bg-gray-300 flex items-center justify-center transition-colors touch-manipulation"
+            className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 active:bg-gray-300 flex items-center justify-center transition-colors touch-manipulation flex-shrink-0"
             aria-label="Attach files"
           >
             <Paperclip className="w-5 h-5 text-gray-600" />
@@ -231,7 +231,7 @@ function ElegantInput({
           <button
             type="button"
             onClick={toggleRecording}
-            className={`w-11 h-11 rounded-full flex items-center justify-center transition-colors touch-manipulation ${
+            className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors touch-manipulation flex-shrink-0 ${
               isRecording 
                 ? 'bg-red-100 hover:bg-red-200 active:bg-red-300' 
                 : 'bg-gray-100 hover:bg-gray-200 active:bg-gray-300'
@@ -248,13 +248,13 @@ function ElegantInput({
           <button
             onClick={handleSend}
             disabled={isSending || (value.trim() === "" && attachments.length === 0)}
-            className="w-11 h-11 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:from-blue-700 active:to-purple-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center transition-all touch-manipulation"
+            className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:from-blue-700 active:to-purple-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center transition-all touch-manipulation flex-shrink-0"
             aria-label="Send message"
           >
             {isSending ? (
-              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
             ) : (
-              <Send className="w-5 h-5 text-white" />
+              <Send className="w-4 h-4 text-white" />
             )}
           </button>
         </div>
